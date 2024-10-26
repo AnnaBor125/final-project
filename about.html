@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ireland </title>
+    <script src="about.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<header class="header">
+    <div class="header__container">
+        <figure class="header__logo">
+            <img src="img/logo.png" width="100" height="100"  alt="Герб Ирландии">
+        </figure>
+        <h1 class="header__title">Тревел блог об Ирландии </h1>
+        <h2 class="header__subtitle">Встретить леприкона, найти четырехлистный клевер, побывать в самом старом пабе мира - об этом и не только</h2> <!--Подзаголовок-->
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="index.html" class="header__menu-link">Вернуться на главную страницу</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <section class = "about">
+        <div class="about__container">
+            <figure class="about__image">
+                <img src="img/me.png" alt="Фото Анны Боровиковой"/>
+                <figcaption class="about__caption">
+                    Анна Боровикова, создатель блога
+            </figcaption>
+        </figure>
+        <p class="about__text">Приветствую всех на моем скромном блоге об удивительном уголке нашей необъятной планеты - Ирландии. В далеком 2015 году, приехав столицу Ирландии на двухнедельные курсы английского языка, я сразу же влюбилась в эту страну. Уезжая, я пообещала себе обязательно вернуться в это удивительное место. И вернулась. В 2017 я поступила в магистратуру и переехала жить в Дублин на полтора удивительных года. В этом блоге я бы хотела показать вам самые красивые места этого острова.</p>
+        <p class='about__text'> Если вы, как и я, влюблены в эту страну, добро пожаловать на блог. </p>
+        <blockquote class="about__quote">
+            "Жить необязательно. <span>Путешествовать — необходимо.</span>" &ndash; Уильям Берроуз
+        </blockquote>
+    </div>
+</section>
+<section class="contact-form">
+    <h2>Связаться со мной можно через форму ниже:</h2>
+    <form
+      action="send_message.php"
+      method="POST"
+      id="contactForm"
+      target="_blank"
+    >
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Контактный Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Ваше сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>
+<footer class="footer">
+    <div class="footer__container">
+        <h2 class="footer__contact">Контакты</h2>
+        <p class="footer__contact-item"> Email: markinaann.125@mail.ru</p>
+        <p class="footer__contact-item"> Telegram / WhatsApp: +7 (906) 035 66 61</p>
+        <div class = "footer__rights"> &copy; 2024 Все права защищены. </div>
+    </div>
+</footer>
+</html>
